@@ -21,7 +21,11 @@
 <html lang="en">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet" />
-
+    <script type="text/javascript">
+      function myFunction(url) {
+        window.open(url, "_blank") // opens passed url in new tab
+      }
+    </script>
     <title>KlearNow</title>
     <style>
       html,
@@ -177,11 +181,11 @@
             Hello <span class="username">Jake</span>, <br />
             You are almost ready to start Klearing Now! Simply click on the button below to complete registration.
           </p>
-          <form action="">
+          <form onsubmit="myFunction(url)">
             <button type="submit" class="register-button">COMPLETE REGISTRATION</button>
           </form>
           <p>
-            If above link does not work, please <a class="content-link" href="#">click here!</a> <br />
+            If above link does not work, please <a class="content-link" href="javascript:myFunction(url)">click here!</a> <br />
             For any questions and help, please <a class="content-link" href="mailto:info@klearnow.com">contact us.</a>
           </p>
         </div>
