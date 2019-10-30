@@ -1,0 +1,181 @@
+/*************************************************************************
+ *
+ * KLEARNOW CONFIDENTIAL
+ * __________________
+ *
+ *  Copyright (c) 2018 - 2018 KLEARNOW Corporation.
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of KLEARNOW Corporation and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to KLEARNOW Corporation
+ * and its suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from KLEARNOW Corporation.
+ */
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet" />
+
+    <title>KlearNow</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .wrapper {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 80%;
+        min-height: 25px;
+        margin: auto;
+        margin-top: 25px;
+      }
+
+      .header {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        padding: 15px 0px;
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        box-shadow: 0 2px 4px 0 rgba(146, 146, 146, 0.5);
+      }
+
+      .banner {
+        display: flex;
+        height: 122px;
+        border-radius: 2px 2px 0 0;
+        background: linear-gradient(207.07deg, #04909e 0%, #3db6b4 37.57%, #7adecb 100%);
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        padding: 10px;
+        color: white;
+      }
+
+      .computer {
+        width: 248px;
+        position: absolute;
+        left: 50%;
+        margin-left: -124px;
+        bottom: 0px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 5px 10%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 100;
+        color: #090b0b;
+      }
+
+      .register-button {
+        height: 49px;
+        width: 290px;
+        border-radius: 3px;
+        border: none;
+        background: linear-gradient(207.07deg, #04909e 0%, #3db6b4 37.57%, #7adecb 100%);
+        cursor: pointer;
+        transition: 0.2s ease;
+        color: white;
+        font-size: 16px;
+        margin: 25px;
+      }
+
+      .register-button:hover {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.37);
+      }
+
+      button:focus {
+        outline: 0;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .username {
+        font-weight: 400;
+      }
+
+      .content-link:link {
+        color: #28c4ff;
+        transition: 0.2s ease;
+        text-decoration: none;
+        font-weight: 400;
+      }
+
+      .content-link:hover {
+        color: #04909e;
+      }
+
+      .content-link:visited {
+        color: #28c4ff;
+      }
+
+      .footer {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        font-size: 16px;
+        color: #5b5858;
+        margin-top: 25px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img style="width: 200px" src="https://raw.githubusercontent.com/jacobkx/kn-images/master/kn_logo.png" />
+      </div>
+      <div class="content-wrapper">
+        <div class="banner">
+          <img class="computer" src="https://raw.githubusercontent.com/jacobkx/kn-images/master/computer.png" />
+          CUSTOMS CLEARANCE SIMPLIFIED
+        </div>
+        <div class="content">
+          <p class="title">Almost there, don't forget to complete your registration.</p>
+          <p style="text-align: left;">
+            Hello <span class="username">Jake</span>, <br />
+            You are almost ready to start Klearing Now! Simply click on the button below to complete registration.
+          </p>
+          <form action="">
+            <button type="submit" class="register-button">COMPLETE REGISTRATION</button>
+          </form>
+          <p>
+            If above link does not work, please <a class="content-link" href="#">click here!</a> <br />
+            For any questions and help, please <a class="content-link" href="mailto:info@klearnow.com">contact us.</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div><img style="width: 100px" src="https://raw.githubusercontent.com/jacobkx/kn-images/master/kn_logo.png" /> CONFIDENTIAL</div>
+        <div>Copyright (c) 2018 - 2019 KlearNow Corporation. All Rights Reserved.</div>
+        <p>
+          NOTICE: All information contained herein is, and remains the property of KlearNow Corporation and its suppliers, if any. The intellectual and technical concepts contained herein are proprietary to KlearNow Corporation and its suppliers and may be covered by U.S. and Foreign Patents, patents in process, and are protected by trade secret or copyright law. Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained
+          from KlearNow Corporation.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
