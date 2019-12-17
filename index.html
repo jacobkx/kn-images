@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet" />
     <script type="text/javascript">
       function myFunction(url) {
-        window.open(url, "_blank") // opens passed url in new tab
+        window.open(url, "_blank"); // opens passed url in new tab
       }
     </script>
     <title>KlearNow</title>
@@ -32,8 +32,15 @@
       body {
         padding: 0;
         margin: 0;
+        font: inherit;
+        font-size: 100%;
         font-family: "Roboto", sans-serif;
-        background: black;
+        border: 0;
+        vertical-align: baseline;
+      }
+
+      body {
+        line-height: 1;
       }
 
       .wrapper {
@@ -77,6 +84,7 @@
 
       .computer {
         width: 248px;
+        height: 170px;
         position: absolute;
         left: 50%;
         margin-left: -124px;
@@ -92,7 +100,7 @@
         font-size: 20px;
         font-weight: 100;
         color: #090b0b;
-        background-color: #FAFAFA;
+        background-color: #fafafa;
       }
 
       .register-button {
@@ -186,9 +194,9 @@
             Hello <span class="username">Jake</span>, <br /><br />
             You are almost ready to start Klearing Now! Simply click on the button below to complete registration.
           </p>
-          <form onsubmit="myFunction(url)">
+          <a class="content-link" href="javascript:myFunction(url)">
             <button type="submit" class="register-button">COMPLETE REGISTRATION</button>
-          </form>
+          </a>
           <p>
             If above link does not work, please <a class="content-link" href="javascript:myFunction(url)">click here!</a> <br />
             For any questions and help, please <a class="content-link" href="mailto:info@klearnow.com">contact us.</a>
@@ -196,7 +204,7 @@
         </div>
       </div>
       <div class="footer">
-        <div><img style="width: 100px" src="https://raw.githubusercontent.com/jacobkx/kn-images/master/kn_logo.png" /> CONFIDENTIAL</div>
+        <div><img style="width: 100px; height: 12.17px;" src="https://raw.githubusercontent.com/jacobkx/kn-images/master/kn_logo.png" /> CONFIDENTIAL</div>
         <div>Copyright (c) 2018 - 2019 KlearNow Corporation. All Rights Reserved.</div>
         <p>
           NOTICE: All information contained herein is, and remains the property of KlearNow Corporation and its suppliers, if any. The intellectual and technical concepts contained herein are proprietary to KlearNow Corporation and its suppliers and may be covered by U.S. and Foreign Patents, patents in process, and are protected by trade secret or copyright law. Dissemination of this information or reproduction of this material is strictly forbidden unless prior written permission is obtained
